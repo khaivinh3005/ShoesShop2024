@@ -77,6 +77,14 @@ header {
           border-bottom: 5px solid #ae18e2;
           width: 450px;
           margin-top: 30px;
+          position: relative;
+          .mask {
+            position: absolute;
+            font-size: 20px;
+            color: red;
+            right: 0;
+            top: 25px;
+          }
           input {
             border: none;
             outline: none;
