@@ -27,7 +27,9 @@
           </div>
           <ul class="header-A-2">
             <li>
-              <a href="#"><i class="fa fa-shopping-cart"></i>Login</a>
+              <a href="http://127.0.0.1:5500/Login/index.html"
+                ><i class="fa fa-shopping-cart"></i>Login</a
+              >
             </li>
             <li><a href="#">Register</a></li>
           </ul>
@@ -54,21 +56,26 @@
           <div class="box">
             <div class="input-box">
               <span class="mask">(*)</span>
-              <input type="text" name="email" placeholder="Email" />
+              <input type="email" name="email" id="email" placeholder="Email" />
             </div>
             <div class="input-box">
               <span class="mask">(*)</span>
-              <input type="email" name="name" placeholder="Name" />
+              <input type="text" name="name" id="name" placeholder="Name" />
             </div>
           </div>
           <div class="box">
             <div class="input-box">
               <span class="mask">(*)</span>
-              <input type="password" name="password" placeholder="Password" />
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="Password"
+              />
             </div>
             <div class="input-box">
               <span class="mask">(*)</span>
-              <input type="tel" name="phone" placeholder="Phone" />
+              <input type="tel" name="phone" id="phone" placeholder="Phone" />
             </div>
           </div>
           <div class="box box-3">
@@ -76,23 +83,24 @@
               <span class="mask">(*)</span>
               <input
                 type="password"
-                name="confirmpassword"
-                placeholder="Confirm password"
+                name="confirmPassword"
+                placeholder="Confirm Password"
+                id="confirmPassword"
               />
             </div>
             <div class="input-box gender-box">
               <span style="font-size: 35px" class="gender1">Gender</span>
               <label class="gender1" style="width: 100px">
-                <input type="radio" name="gender" value="male" />
+                <input type="radio" name="gender" value="male" id="male" />
                 Male
               </label>
               <label class="gender1" style="width: 120px">
-                <input type="radio" name="gender" value="male" />
+                <input type="radio" name="gender" value="Female" id="female" />
                 Female
               </label>
             </div>
           </div>
-          <button class="btnSubmit">Submit</button>
+          <button class="btnSubmit" id="submit">Submit</button>
         </form>
       </div>
     </div>
@@ -145,6 +153,7 @@
       </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
     <!-- end footer  -->
     <script src="main.js"></script>
   </body>
