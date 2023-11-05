@@ -43,15 +43,15 @@
         >
           <div class="swiper-wrapper">
             <div class="swiper-slide swiper-slide-active">
-                <div class="swiper-image">
-                    <img class="img-1" src="./image 4.png" alt="">
-                    <img class="img-2" src="./image 6.png" alt="">
-                </div>
-                <div class="swiper-product-content">
-                    <h1>Product name</h1>
-                    <p>Product description ....</p>
-                    <button>Buy now</button>
-                </div>
+              <div class="swiper-image">
+                <img class="img-1" src="./image 4.png" alt="" />
+                <img class="img-2" src="./image 6.png" alt="" />
+              </div>
+              <div class="swiper-product-content">
+                <h1>Product name</h1>
+                <p>Product description ....</p>
+                <button>Buy now</button>
+              </div>
             </div>
             <div class="swiper-slide swiper-slide-next">slide2</div>
             <div class="swiper-slide"></div>
@@ -85,37 +85,27 @@
         </div>
       </div>
       <div class="product-feature">
-        <h1>- Product Feature -</h1>
-        <div class="grid grid-cols-3 gap-15 pl-[200px]">
-            <div class="product w-[310px]">
-                <div class="product-img">
-                    <img src="./image 5.png" alt="">
-                </div>
-                <div class="product-content mt-[20px] pl-[25px]">
-                    <h4>Adidas Prophere</h4>
-                    <p>short description</p>
-                </div>
-                <div class="product-price flex">
-                    <button>Buy now</button>
-                    <div class="price"><p>85$</p></div>
-                </div>
-            </div>
+        <h1 class="text-center">- Product Feature -</h1>
+        <div class="grid grid-cols-3 gap-15 pl-[200px]" id="list-shoes">
+          <!-- item -->
         </div>
       </div>
     </main>
     <script>
-      var swiper = new Swiper(".mySwiper", {
+      var swiper = new Swiper('.mySwiper', {
         cssMode: true,
         navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
         },
         pagination: {
-          el: ".swiper-pagination",
+          el: '.swiper-pagination',
         },
         mousewheel: true,
         keyboard: true,
       });
     </script>
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+    <script src="./homePage.js"></script>
   </body>
 </html>
